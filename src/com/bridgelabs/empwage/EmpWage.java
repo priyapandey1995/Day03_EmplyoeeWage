@@ -25,7 +25,12 @@ public class EmpWage {
 		case 1:
 			System.out.println("Emplyoee is present");//uc1 code added
 			System.out.println("Emplyoee Daily Wage is"+" " +wagePerHour * noOfWorkingHours);
-			System.out.println("Emplyoee Monthly wage is" + " " +wagePerHour*noOfWorkingHours*workingDaysInAMonth);//uc5 code is added
+			int totalWorkingHoursInMonth = 1;
+			if(totalWorkingHoursInMonth<=100) {
+				totalWorkingHoursInMonth++;
+			}
+			System.out.println("Emplyoee Monthly wage is" + " " +wagePerHour*totalWorkingHoursInMonth);//uc6 code is added
+			
 			break;
 		case 2:
 			System.out.println("Part Time");
